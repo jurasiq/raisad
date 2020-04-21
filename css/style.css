@@ -1,12 +1,18 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#023044), color-stop(65.1%, #005459), to(#023044));
+  background: linear-gradient(180deg, #023044 0%, #005459 65.1%, #023044 100%);
 }
 /*# sourceMappingURL=style.css.map */
