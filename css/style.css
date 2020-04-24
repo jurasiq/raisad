@@ -7,6 +7,12 @@ body {
   font-size: 16px;
   min-width: 320px;
   color: #fff;
+  background-image: url(../img/craft-texture.png);
+}
+
+.b-text {
+  color: #000;
+  line-height: 114%;
 }
 
 .wrapper {
@@ -21,13 +27,36 @@ a ::hover {
   color: #fff;
 }
 
-h1 {
+.h1 {
   font-size: 90px;
   font-weight: 200;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.045em;
   line-height: 112%;
+}
+
+.h2-b {
+  padding-bottom: 5vh;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.h2-w {
+  padding-bottom: 5vh;
+  font-weight: 900;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.img-response {
+  display: block;
+  width: 100%;
 }
 
 .header {
@@ -50,10 +79,7 @@ h1 {
 
 .header .phone {
   margin-top: 24px;
-}
-
-.header .bg-image {
-  position: absolute;
+  padding-bottom: 30px;
 }
 
 .header #borsch {
@@ -76,11 +102,6 @@ h1 {
   left: -38px;
 }
 
-.header #dal {
-  bottom: -140px;
-  left: 109px;
-}
-
 .header #rizotto {
   right: 30px;
   bottom: 60px;
@@ -101,6 +122,10 @@ h1 {
   left: 213px;
 }
 
+.bg-image {
+  position: absolute;
+}
+
 .top-menu {
   position: fixed;
   left: 0;
@@ -108,6 +133,7 @@ h1 {
   width: 100%;
   height: 60px;
   padding: 15px 0;
+  z-index: 99;
 }
 
 .top-menu .logo {
@@ -135,5 +161,44 @@ h1 {
 .top-menu .nav li a {
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.about {
+  padding: 12vh 0 7vh;
+}
+
+.about #dal {
+  bottom: -140px;
+  left: 109px;
+}
+
+.about .vegetable {
+  width: 100%;
+  height: 330px;
+  margin-bottom: 10vh;
+  background-image: url(../img/vegetable.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mission {
+  background: #023044;
+  padding: 18vh 0;
+}
+
+.mission .mission-text {
+  padding: 30px 0;
+  border-top: 1px solid #32C832;
+  border-bottom: 1px solid #32C832;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 122%;
+  text-align: center;
+}
+
+.mission .mission-text #mint3 {
+  bottom: -28px;
+  right: 236px;
 }
 /*# sourceMappingURL=style.css.map */
