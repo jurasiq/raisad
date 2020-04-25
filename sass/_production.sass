@@ -1,0 +1,40 @@
+.production
+	padding: 12vh 0
+
+.prod-razdel
+	width: 100%
+	background: #023044
+	margin-top: 4vh
+	padding: 3vh 0 2vh
+	.prod-item
+		display: block
+		text-align: center
+		text-decoration: none
+		.images
+			position: relative
+			width: 100%
+			height: 33vh
+			img
+				position: absolute
+				width: 13vw
+			.prodimg-1
+				top: 5%
+				left: 20%
+			.prodimg-2
+				bottom: 5%
+				right: 20%
+		&:hover
+			div
+				&::after
+					opacity: 1
+		.item-name
+			&::after
+				content: ''
+				display: block
+				margin: auto
+				transform: translateY(3px)
+				height: 1px
+				width: 20%
+				background-color: #fff
+				opacity: 0
+
