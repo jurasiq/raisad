@@ -60,6 +60,18 @@
 		li
 			display: block
 			a
+				display: block
 				text-transform: uppercase
+				text-decoration: none
 				font-size: 14px
+				transition: all ease .4s
+					
+				&::after
+					content: ''
+					display: block
+					margin: auto
+					transform: translateY(1px)
+					height: 1px
+					background-color: #fff
+					opacity: 1
 	

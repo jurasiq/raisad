@@ -37,6 +37,7 @@ a:hover {
 }
 
 .h2-b {
+  margin: 0;
   padding-bottom: 5vh;
   font-weight: 900;
   font-size: 24px;
@@ -46,6 +47,7 @@ a:hover {
 }
 
 .h2-w {
+  margin: 0;
   padding-bottom: 5vh;
   font-weight: 900;
   font-size: 24px;
@@ -159,8 +161,23 @@ a:hover {
 }
 
 .top-menu .nav li a {
+  display: block;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 14px;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.top-menu .nav li a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  height: 1px;
+  background-color: #fff;
+  opacity: 1;
 }
 
 .about {
@@ -203,7 +220,24 @@ a:hover {
 }
 
 .production {
+  position: relative;
+  overflow-x: hidden;
   padding: 12vh 0;
+}
+
+.production #petro1 {
+  top: 55px;
+  left: 147px;
+}
+
+.production #tomato1 {
+  top: 85px;
+  right: -38px;
+}
+
+.production #petro2 {
+  bottom: 72px;
+  left: 32px;
 }
 
 .prod-razdel {
@@ -225,9 +259,11 @@ a:hover {
   height: 33vh;
 }
 
-.prod-razdel .prod-item .images img {
+.prod-razdel .prod-item .images .pac {
   position: absolute;
   width: 13vw;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .prod-razdel .prod-item .images .prodimg-1 {
@@ -240,7 +276,23 @@ a:hover {
   right: 20%;
 }
 
-.prod-razdel .prod-item:hover div::after {
+.prod-razdel .prod-item .images .newprod {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+.prod-razdel .prod-item:hover .prodimg-1 {
+  -webkit-transform: translate(-3%, -3%);
+          transform: translate(-3%, -3%);
+}
+
+.prod-razdel .prod-item:hover .prodimg-2 {
+  -webkit-transform: translate(3%, 3%);
+          transform: translate(3%, 3%);
+}
+
+.prod-razdel .prod-item:hover .item-name::after {
   opacity: 1;
 }
 
@@ -251,8 +303,20 @@ a:hover {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   height: 1px;
-  width: 20%;
+  width: 15%;
   background-color: #fff;
   opacity: 0;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.wherebuy {
+  position: relative;
+  padding: 12vh 0;
+}
+
+.wherebuy #rosmarin {
+  top: -40px;
+  right: 258px;
 }
 /*# sourceMappingURL=style.css.map */
