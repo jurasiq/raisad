@@ -28,7 +28,7 @@
 			.pac
 				position: absolute
 				width: 13vw
-				transition: all ease .4s
+				transition: all ease .2s
 			.prodimg-1
 				top: 5%
 				left: 20%
@@ -46,16 +46,15 @@
 				transform: translate(3%, 3%)
 			.item-name
 				&::after
-					opacity: 1
+					transform: translateY(3px) scale(1)
 		.item-name
 			&::after
 				content: ''
 				display: block
 				margin: auto
-				transform: translateY(3px)
+				transform: translateY(3px) scale(0)
 				height: 1px
 				width: 15%
 				background-color: #fff
-				opacity: 0
-				transition: all ease .4s
+				transition: all ease .2s
 

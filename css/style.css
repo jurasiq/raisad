@@ -165,19 +165,23 @@ a:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
 }
 
 .top-menu .nav li a::after {
   content: '';
   display: block;
   margin: auto;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(2px) scale(0);
+          transform: translateY(2px) scale(0);
   height: 1px;
   background-color: #fff;
-  opacity: 1;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.top-menu .nav li a:hover::after {
+  -webkit-transform: translateY(2px) scale(1);
+          transform: translateY(2px) scale(1);
 }
 
 .about {
@@ -262,8 +266,8 @@ a:hover {
 .prod-razdel .prod-item .images .pac {
   position: absolute;
   width: 13vw;
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .prod-razdel .prod-item .images .prodimg-1 {
@@ -293,21 +297,21 @@ a:hover {
 }
 
 .prod-razdel .prod-item:hover .item-name::after {
-  opacity: 1;
+  -webkit-transform: translateY(3px) scale(1);
+          transform: translateY(3px) scale(1);
 }
 
 .prod-razdel .prod-item .item-name::after {
   content: '';
   display: block;
   margin: auto;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  -webkit-transform: translateY(3px) scale(0);
+          transform: translateY(3px) scale(0);
   height: 1px;
   width: 15%;
   background-color: #fff;
-  opacity: 0;
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .wherebuy {
