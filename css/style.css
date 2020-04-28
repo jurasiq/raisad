@@ -56,9 +56,36 @@ a:hover {
   text-align: center;
 }
 
+.h4 {
+  margin-top: 12vh;
+  margin-bottom: 3vh;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
 .img-response {
   display: block;
   width: 100%;
+}
+
+.base-btn {
+  width: 100%;
+  text-align: center;
+  text-decoration: none !important;
+  display: block;
+  background: #023044;
+  border-radius: 30px;
+  padding: 7px 35px 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.base-btn:hover {
+  background: #000000;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .header {
@@ -322,5 +349,47 @@ a:hover {
 .wherebuy #rosmarin {
   top: -40px;
   right: 258px;
+}
+
+.wherebuy #rosmarin2 {
+  bottom: 296px;
+  left: 267px;
+}
+
+.e-market {
+  text-align: center;
+}
+
+.e-market a {
+  color: #000000;
+}
+
+.opt-clients {
+  position: relative;
+  padding: 12vh 0;
+}
+
+.opt-clients #petro3 {
+  top: -44px;
+  right: 129px;
+}
+
+.opt-clients #garlic {
+  top: 371px;
+  right: 30px;
+}
+
+.opt-clients #tomato2 {
+  top: 84px;
+  left: 0;
+}
+
+.contact-button {
+  margin: 4vh 0;
+  text-align: center;
+}
+
+.contact-button img {
+  margin-bottom: 1vh;
 }
 /*# sourceMappingURL=style.css.map */
