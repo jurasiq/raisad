@@ -70,6 +70,10 @@ a:hover {
   width: 100%;
 }
 
+.relative {
+  position: relative;
+}
+
 .base-btn {
   width: 100%;
   text-align: center;
@@ -209,6 +213,12 @@ a:hover {
 .top-menu .nav li a:hover::after {
   -webkit-transform: translateY(2px) scale(1);
           transform: translateY(2px) scale(1);
+}
+
+.fill {
+  background-color: #023044;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .about {
@@ -354,6 +364,62 @@ a:hover {
 .wherebuy #rosmarin2 {
   bottom: 296px;
   left: 267px;
+}
+
+.slider-market {
+  position: relative;
+  width: 100%;
+}
+
+.slider-market_wrap {
+  width: 83.333333%;
+  margin: 0 auto;
+}
+
+.slider-market .slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 6%;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-market .slider-nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 35px 30px;
+  border-radius: 15px;
+  background: #023044;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-market .slider-nav .nav:hover {
+  background: #000000;
+}
+
+.slider-market .slider-nav #prev-slide svg {
+  margin-right: 3px;
+}
+
+.slider-market .slider-nav #next-slide svg {
+  margin-left: 3px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border: 2px solid #023044;
 }
 
 .e-market {

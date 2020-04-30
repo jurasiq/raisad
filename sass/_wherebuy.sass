@@ -8,6 +8,42 @@
 	#rosmarin2
 		bottom: 296px
 		left: 267px
+.slider-market
+	position: relative
+	width: 100%
+	&_wrap
+		width: 83.333333%
+		margin: 0 auto
+	.slider-nav
+		display: flex
+		top: 6%
+		position: absolute
+		width: 100%
+		justify-content: space-between
+		.nav
+			display: flex
+			cursor: pointer
+			width: 30px
+			height: 30px
+			margin: 35px 30px
+			border-radius: 15px
+			background: #023044
+			justify-content: center
+			align-items: center
+			&:hover
+				background: #000000
+		#prev-slide
+			svg
+				margin-right: 3px
+		#next-slide
+			svg
+				margin-left: 3px
+.owl-theme
+	.owl-dots
+		.owl-dot
+			span
+				border: 2px solid #023044
+
 .e-market
 	text-align: center
 	a
