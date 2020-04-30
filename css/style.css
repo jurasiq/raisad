@@ -102,17 +102,7 @@ a:hover {
 }
 
 .header .h1 {
-  margin: 20% 0 12%;
-}
-
-.header .label img {
-  display: inline-block;
-  width: 100px;
-}
-
-.header .phone {
-  margin-top: 24px;
-  padding-bottom: 30px;
+  margin: 20vh 0 0;
 }
 
 .header #borsch {
@@ -219,6 +209,24 @@ a:hover {
   background-color: #023044;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+
+.contact-block {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-block .label {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-block .phone {
+  margin-top: 3vh;
+  padding-bottom: 6vh;
 }
 
 .about {
@@ -338,6 +346,10 @@ a:hover {
           transform: translateY(3px) scale(1);
 }
 
+.prod-razdel .prod-item .item-name {
+  display: inline-block;
+}
+
 .prod-razdel .prod-item .item-name::after {
   content: '';
   display: block;
@@ -345,7 +357,6 @@ a:hover {
   -webkit-transform: translateY(3px) scale(0);
           transform: translateY(3px) scale(0);
   height: 1px;
-  width: 15%;
   background-color: #fff;
   -webkit-transition: all ease .2s;
   transition: all ease .2s;
