@@ -484,6 +484,7 @@ a:hover {
 }
 
 .contact-button img {
+  width: 44px;
   margin-bottom: 1vh;
 }
 
@@ -591,10 +592,55 @@ a:hover {
 }
 
 .prod-parametres {
-  padding: 8vh 0;
+  padding: 10vh 0;
 }
 
 .prod-parametres img {
   margin-bottom: 12px;
+}
+
+.receptes {
+  margin-bottom: 5vh;
+}
+
+.receptes .r-wrap:nth-child(2n+2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.receptes .recept-item {
+  text-align: center;
+  margin-bottom: 4vh;
+  margin-bottom: 30px;
+}
+
+.receptes .recept-item img {
+  width: 112px;
+  margin-bottom: 28px;
+}
+
+.receptes .recept-item .b-text {
+  text-align: left;
+}
+
+.video {
+  margin-bottom: 10vh;
+}
+
+.video .video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video .video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-width: 0;
+  outline-width: 0;
 }
 /*# sourceMappingURL=style.css.map */

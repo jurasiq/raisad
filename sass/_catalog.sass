@@ -1,34 +1,66 @@
 .catalog
-  padding-top: 100px
-  .h2
-  .prod-item
-    position: relative
-    margin-bottom: 4vh
-    text-align: center
-    transition: all ease .2s
-    &_image
-      margin-bottom: 22px
-    &_icons
-      color: #000
-      font-weight: bold
-      display: flex
-      justify-content: center
-      align-items: center
-      position: relative
-      margin: 12px auto
-      .scales
-        width: 35px
-      span
-        margin-left: 6px
-        margin-right: 22px
-      .servings
-        width: 50px
-    &_sost
-      text-align: left
-    &:hover
-      transform: translateY(-10px)
+	padding-top: 100px
+	.h2
+	.prod-item
+		position: relative
+		margin-bottom: 4vh
+		text-align: center
+		transition: all ease .2s
+		&_image
+			margin-bottom: 22px
+		&_icons
+			color: #000
+			font-weight: bold
+			display: flex
+			justify-content: center
+			align-items: center
+			position: relative
+			margin: 12px auto
+			.scales
+				width: 35px
+			span
+				margin-left: 6px
+				margin-right: 22px
+			.servings
+				width: 50px
+		&_sost
+			text-align: left
+		&:hover
+			transform: translateY(-10px)
 
 .prod-parametres
-  padding: 8vh 0
-  img
-    margin-bottom: 12px
+	padding: 10vh 0
+	img
+		margin-bottom: 12px
+
+.receptes
+	margin-bottom: 5vh
+	.r-wrap
+		&:nth-child(2n+2)
+			border-left: 1px solid #000
+			border-right: 1px solid #000
+	.recept-item
+		text-align: center
+		margin-bottom: 4vh
+		margin-bottom: 30px
+		img
+			width: 112px
+			margin-bottom: 28px
+		.b-text
+			text-align: left
+  
+.video
+	margin-bottom: 10vh
+	.video-wrap
+		position: relative
+		padding-bottom: 56.25%
+		height: 0
+		overflow: hidden
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			border-width: 0
+			outline-width: 0
