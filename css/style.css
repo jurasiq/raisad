@@ -58,6 +58,7 @@ a:hover {
 
 .h3 {
   font-size: 16px;
+  font-weight: 900;
   color: #000000;
   text-align: center;
   line-height: 114%;
@@ -620,6 +621,8 @@ a:hover {
 }
 
 .receptes .recept-item .b-text {
+  margin: 0;
+  padding-left: 15px;
   text-align: left;
 }
 
