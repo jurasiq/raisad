@@ -58,7 +58,7 @@ a:hover {
 
 .h3 {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 800;
   color: #000000;
   text-align: center;
   line-height: 114%;
@@ -605,8 +605,8 @@ a:hover {
 }
 
 .receptes .r-wrap:nth-child(2n+2) {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
 }
 
 .receptes .recept-item {
@@ -622,7 +622,8 @@ a:hover {
 
 .receptes .recept-item .b-text {
   margin: 0;
-  padding-left: 15px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   text-align: left;
 }
 
