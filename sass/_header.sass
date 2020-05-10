@@ -53,28 +53,29 @@
 		img
 			height: 30px
 	.nav
-		display: flex
-		justify-content: space-around
-		margin: 0
-		padding: 0
-		li
-			display: block
-			a
+		ul
+			display: flex
+			justify-content: space-around
+			margin: 0
+			padding: 0
+			li
 				display: block
-				text-transform: uppercase
-				text-decoration: none
-				font-size: 14px
-				&::after
-					content: ''
+				a
 					display: block
-					margin: auto
-					transform: translateY(2px) scale(0)
-					height: 1px
-					background-color: #fff
-					transition: all ease .2s
-				&:hover
+					text-transform: uppercase
+					text-decoration: none
+					font-size: 14px
 					&::after
-						transform: translateY(2px) scale(1)
+						content: ''
+						display: block
+						margin: auto
+						transform: translateY(2px) scale(0)
+						height: 1px
+						background-color: #fff
+						transition: all ease .2s
+					&:hover
+						&::after
+							transform: translateY(2px) scale(1)
 .fill
 	background-color: #023044
 	transition: all .5s

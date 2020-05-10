@@ -185,7 +185,7 @@ a:hover {
   height: 30px;
 }
 
-.top-menu .nav {
+.top-menu .nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,18 +195,18 @@ a:hover {
   padding: 0;
 }
 
-.top-menu .nav li {
+.top-menu .nav ul li {
   display: block;
 }
 
-.top-menu .nav li a {
+.top-menu .nav ul li a {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
 }
 
-.top-menu .nav li a::after {
+.top-menu .nav ul li a::after {
   content: '';
   display: block;
   margin: auto;
@@ -218,7 +218,7 @@ a:hover {
   transition: all ease .2s;
 }
 
-.top-menu .nav li a:hover::after {
+.top-menu .nav ul li a:hover::after {
   -webkit-transform: translateY(2px) scale(1);
           transform: translateY(2px) scale(1);
 }
