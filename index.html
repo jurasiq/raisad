@@ -256,7 +256,7 @@
 					<div class="col-2">
 						<div class="contact-button">
 							<img src="img/icon-phone.svg" alt="Заказать звонок">
-							<a href="" class="base-btn">заказать звонок</a>
+							<a href="#" class="base-btn" id="callback">заказать звонок</a>
 						</div>
 					</div>
 
@@ -310,6 +310,18 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-overlay">
+			<div class="modal-block">
+				<div class="modal-close"></div>
+				<form class="callback-form">
+					<h2 class="h2-b">Оставьте свой номер, <br>мы перезвоним!</h2>
+					<input type="text" name="name" placeholder="Имя" class="form-input">
+					<input type="tel" name="phone" placeholder="Телефон" class="form-input">
+					<button type="submit" class="base-btn">отправить</button>
+				</form>
+			</div>
+		</div>
 
 	</div>
 	<!--Vendor scripts-->

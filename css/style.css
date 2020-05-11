@@ -86,8 +86,11 @@ a:hover {
   width: 100%;
   text-align: center;
   text-decoration: none !important;
-  display: block;
+  display: inline-block;
   background: #023044;
+  color: #ffffff;
+  border: none;
+  max-width: 210px;
   border-radius: 30px;
   padding: 7px 35px 10px;
   -webkit-transition: all .2s;
@@ -646,5 +649,89 @@ a:hover {
   width: 100%;
   border-width: 0;
   outline-width: 0;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay .modal-block {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 35px 55px 55px;
+  max-width: 606px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.modal-overlay .modal-block .modal-close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-overlay .modal-block .modal-close::before {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+  height: 5px;
+  width: 24px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal-overlay .modal-block .modal-close::after {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+  height: 5px;
+  width: 24px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-overlay .modal-block .callback-form {
+  display: block;
+  text-align: center;
+}
+
+.modal-overlay .modal-block .callback-form .form-input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+}
+
+.modal-overlay .modal-block .callback-form .h2-b {
+  padding-bottom: 0 !important;
+}
+
+.modal-overlay .modal-block .callback-form .base-btn {
+  margin-top: 36px;
 }
 /*# sourceMappingURL=style.css.map */

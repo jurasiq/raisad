@@ -35,4 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
 		marketSlider.trigger('next.owl.carousel');
 	})
 
+	// открыть форму обратного звонка
+	$('#callback').click(function (e) {
+		e.preventDefault();
+		$('.modal-overlay').fadeIn();
+		$('.modal-overlay').addClass('disabled');
+	});
+
+	// закрыть на крестик
+	$('.modal-close').click(function () {
+		$('.modal-overlay').fadeOut();
+	});
+
+	// закрыть по клику вне окна
+	$(document).mouseup(function (e) {
+		var popup = $('.modal-block');
+		if (e.target != popup[0] && popup.has(e.target).length === 0) {
+			$('.modal-overlay').fadeOut();
+		}
+	});
+
 });

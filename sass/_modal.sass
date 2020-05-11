@@ -1,0 +1,59 @@
+.modal-overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100vh
+	z-index: 99
+	background-color: rgba(0, 0, 0, 0.5)
+	.modal-block
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		padding: 35px 55px 55px
+		max-width: 606px
+		background: #ffffff
+		border-radius: 20px
+		.modal-close
+			position: absolute
+			display: flex
+			justify-content: center
+			align-items: center
+			top: 0
+			right: 0
+			width: 60px
+			height: 60px
+			color: #000
+			cursor: pointer
+			&::before
+				content: ''
+				position: absolute
+				background-color: #000000
+				height: 5px
+				width: 24px
+				transform: rotate(-45deg)
+			&::after
+				content: ''
+				position: absolute
+				background-color: #000000
+				height: 5px
+				width: 24px
+				transform: rotate(45deg)
+
+		.callback-form
+			display: block
+			text-align: center
+			.form-input
+				display: inline-block
+				width: 100%
+				height: 40px
+				border: none
+				border-bottom: 1px solid #000
+				margin-top: 10px
+			.h2-b
+				padding-bottom: 0 !important
+			.base-btn
+				margin-top: 36px
+
