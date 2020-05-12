@@ -73,6 +73,10 @@ a:hover {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .img-response {
   display: block;
   width: 100%;
@@ -605,6 +609,10 @@ a:hover {
 
 .receptes {
   margin-bottom: 5vh;
+}
+
+.receptes .r-wrap {
+  margin-bottom: 20px;
 }
 
 .receptes .r-wrap:nth-child(2n+2) {
