@@ -256,21 +256,21 @@
 					<div class="col-2">
 						<div class="contact-button">
 							<img src="img/icon-phone.svg" alt="Заказать звонок">
-							<a href="#" class="base-btn" id="callback">заказать звонок</a>
+							<a href="#" class="btn base-btn" data-path="callback-form">заказать звонок</a>
 						</div>
 					</div>
 
 					<div class="col-2">
 						<div class="contact-button">
 							<img src="img/icon-price.svg" alt="Заказать прайс">
-							<a href="#" class="base-btn">заказать прайс</a>
+							<a href="#" class="btn base-btn" data-path="price-form">заказать прайс</a>
 						</div>
 					</div>
 
 					<div class="col-2">
 						<div class="contact-button">
 							<img src="img/icon-write.svg" alt="Написать нам">
-							<a href="#" class="base-btn">написать нам</a>
+							<a href="#" class="btn base-btn" data-path="write-form">написать нам</a>
 						</div>
 					</div>
 
@@ -312,15 +312,40 @@
 		</footer>
 
 		<div class="modal-overlay">
-			<div class="modal-block">
-				<div class="modal-close"></div>
-				<form class="callback-form">
+
+			<div class="modal modal--1" data-target="callback-form">
+				<button class="btn modal-close" onclick="closeModal(this)"></button>
+				<form id="callback-form" class="modalform">
 					<h2 class="h2-b">Оставьте свой номер, <br>мы перезвоним!</h2>
 					<input type="text" name="name" placeholder="Имя" class="form-input">
 					<input type="tel" name="phone" placeholder="Телефон" class="form-input">
 					<button type="submit" class="base-btn">отправить</button>
 				</form>
 			</div>
+
+			<div class="modal modal--2" data-target="price-form">
+				<button class="btn modal-close" onclick="closeModal(this)"></button>
+				<form id="price-form" class="modalform">
+					<h2 class="h2-b">Заказать прайс</h2>
+					<input type="text" name="name" placeholder="Имя" class="form-input">
+					<input type="text" name="email" placeholder="Почта" class="form-input">
+					<input type="text" name="company" placeholder="Компания" class="form-input">
+					<input type="tel" name="phone" placeholder="Телефон" class="form-input">
+					<button type="submit" class="base-btn">отправить</button>
+				</form>
+			</div>
+
+			<div class="modal modal--3" data-target="write-form">
+				<button class="btn modal-close" onclick="closeModal(this)"></button>
+				<form id="write-form" class="modalform">
+					<h2 class="h2-b">Напишите нам</h2>
+					<input type="text" name="name" placeholder="Имя" class="form-input">
+					<input type="text" name="email" placeholder="Почта" class="form-input">
+					<textarea name="comment" rows="10" placeholder="Комментарий..." class="form-text"></textarea>
+					<button type="submit" class="base-btn">отправить</button>
+				</form>
+			</div>
+
 		</div>
 
 	</div>

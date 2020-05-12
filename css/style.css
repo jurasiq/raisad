@@ -652,29 +652,54 @@ a:hover {
 }
 
 .modal-overlay {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
+  opacity: 0;
+  visibility: hidden;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.modal-overlay .modal-block {
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-overlay .modal {
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 35px 55px 55px;
   max-width: 606px;
   background: #ffffff;
   border-radius: 20px;
+  display: none;
 }
 
-.modal-overlay .modal-block .modal-close {
+.modal-overlay .modal--visible {
+  display: block;
+}
+
+.modal-overlay .modal .modal-close {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,11 +714,14 @@ a:hover {
   right: 0;
   width: 60px;
   height: 60px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   color: #000;
   cursor: pointer;
 }
 
-.modal-overlay .modal-block .modal-close::before {
+.modal-overlay .modal .modal-close::before {
   content: '';
   position: absolute;
   background-color: #000000;
@@ -703,7 +731,7 @@ a:hover {
           transform: rotate(-45deg);
 }
 
-.modal-overlay .modal-block .modal-close::after {
+.modal-overlay .modal .modal-close::after {
   content: '';
   position: absolute;
   background-color: #000000;
@@ -713,12 +741,12 @@ a:hover {
           transform: rotate(45deg);
 }
 
-.modal-overlay .modal-block .callback-form {
+.modalform {
   display: block;
   text-align: center;
 }
 
-.modal-overlay .modal-block .callback-form .form-input {
+.modalform .form-input {
   display: inline-block;
   width: 100%;
   height: 40px;
@@ -727,11 +755,20 @@ a:hover {
   margin-top: 10px;
 }
 
-.modal-overlay .modal-block .callback-form .h2-b {
+.modalform .form-text {
+  display: inline-block;
+  width: 100%;
+  height: 130px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+}
+
+.modalform .h2-b {
   padding-bottom: 0 !important;
 }
 
-.modal-overlay .modal-block .callback-form .base-btn {
+.modalform .base-btn {
   margin-top: 36px;
 }
 /*# sourceMappingURL=style.css.map */

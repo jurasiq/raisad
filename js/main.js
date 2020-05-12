@@ -35,24 +35,38 @@ document.addEventListener("DOMContentLoaded", function () {
 		marketSlider.trigger('next.owl.carousel');
 	})
 
-	// открыть форму обратного звонка
-	$('#callback').click(function (e) {
-		e.preventDefault();
-		$('.modal-overlay').fadeIn();
-		$('.modal-overlay').addClass('disabled');
-	});
-
-	// закрыть на крестик
-	$('.modal-close').click(function () {
-		$('.modal-overlay').fadeOut();
-	});
-
-	// закрыть по клику вне окна
-	$(document).mouseup(function (e) {
-		var popup = $('.modal-block');
-		if (e.target != popup[0] && popup.has(e.target).length === 0) {
-			$('.modal-overlay').fadeOut();
-		}
-	});
-
 });
+
+//Открытие модальных форм
+const btns = document.querySelectorAll('.btn');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modals = document.querySelectorAll('.modal');
+
+btns.forEach((el) => {
+	el.addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+
+		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+		modalOverlay.classList.add('modal-overlay--visible');
+	});
+});
+
+modalOverlay.addEventListener('click', (e) => {
+	console.log(e.target);
+
+	if (e.target == modalOverlay) {
+		modalOverlay.classList.remove('modal-overlay--visible');
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+	}
+});
+
+function closeModal(btn) {
+	btn.closest('.modal').classList.remove('modal--visible');
+	btn.closest('.modal-overlay').classList.remove('modal-overlay--visible')
+}
