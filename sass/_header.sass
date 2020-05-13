@@ -5,31 +5,34 @@
 	height: 100vh
 	background: linear-gradient(180deg, #023044 0%, #005459 65.1%, #023044 100%)
 	.h1
+		position: relative
 		margin: 20vh 0 0
+		z-index: 1
 	#borsch
-		top: -190px
-		right: -133px
+		top: -21vh
+		right: -9vw
 	#plow
-		top: 44px
-		left: -164px
+		top: 5vh
+		left: -12vw
 	#petro
-		top: -41px
-		left: 500px
+		top: -4vh
+		left: 32vw
 	#tomato
-		bottom: 215px
-		left: -38px
+		bottom: 17vh
+		left: -3vw
 	#rizotto
-		right: 30px
-		bottom: 60px
+		bottom: 7vh
+		right: 2vw
 	#mint1
-		top: 246px
-		right: 30px
+		top: 26vh
+		right: 2vw
 	#mint2
-		bottom: 96px
-		right: -36px
+		bottom: 11vh
+		right: -2vw
 	#green
-		top: 121px
-		left: 213px
+		top: 13vh
+		left: 14vw
+		z-index: 2
 .bg-image
 	position: absolute
 
@@ -52,30 +55,42 @@
 		display: inline-block
 		img
 			height: 30px
-	.nav
-		ul
-			display: flex
-			justify-content: space-around
-			margin: 0
-			padding: 0
-			li
+
+.nav
+	ul
+		display: flex
+		justify-content: space-around
+		margin: 0
+		padding: 0
+		li
+			display: block
+			a
 				display: block
-				a
+				color: #fff
+				text-transform: uppercase
+				text-decoration: none
+				font-size: 14px
+				&::after
+					content: ''
 					display: block
-					text-transform: uppercase
-					text-decoration: none
-					font-size: 14px
+					margin: auto
+					transform: translateY(2px) scale(0)
+					height: 1px
+					background-color: #fff
+					transition: all ease .2s
+				&:hover
+					&::after
+						transform: translateY(2px) scale(1)
+			&.active
+				a
 					&::after
 						content: ''
 						display: block
 						margin: auto
-						transform: translateY(2px) scale(0)
+						transform: translateY(2px)
 						height: 1px
 						background-color: #fff
-						transition: all ease .2s
-					&:hover
-						&::after
-							transform: translateY(2px) scale(1)
+
 .fill
 	background-color: #023044
 	transition: all .5s

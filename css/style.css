@@ -19,16 +19,8 @@ body {
   width: 100%;
 }
 
-a {
-  color: #fff;
-}
-
-a:hover {
-  color: #fff;
-}
-
 .h1 {
-  font-size: 90px;
+  font-size: 10vh;
   font-weight: 200;
   color: #fff;
   text-transform: uppercase;
@@ -94,7 +86,9 @@ a:hover {
   background: #023044;
   color: #ffffff;
   border: none;
-  max-width: 210px;
+  max-width: 220px;
+  font-size: 1.78vh;
+  line-height: 114%;
   border-radius: 30px;
   padding: 7px 35px 10px;
   -webkit-transition: all .2s;
@@ -117,47 +111,50 @@ a:hover {
 }
 
 .header .h1 {
+  position: relative;
   margin: 20vh 0 0;
+  z-index: 1;
 }
 
 .header #borsch {
-  top: -190px;
-  right: -133px;
+  top: -21vh;
+  right: -9vw;
 }
 
 .header #plow {
-  top: 44px;
-  left: -164px;
+  top: 5vh;
+  left: -12vw;
 }
 
 .header #petro {
-  top: -41px;
-  left: 500px;
+  top: -4vh;
+  left: 32vw;
 }
 
 .header #tomato {
-  bottom: 215px;
-  left: -38px;
+  bottom: 17vh;
+  left: -3vw;
 }
 
 .header #rizotto {
-  right: 30px;
-  bottom: 60px;
+  bottom: 7vh;
+  right: 2vw;
 }
 
 .header #mint1 {
-  top: 246px;
-  right: 30px;
+  top: 26vh;
+  right: 2vw;
 }
 
 .header #mint2 {
-  bottom: 96px;
-  right: -36px;
+  bottom: 11vh;
+  right: -2vw;
 }
 
 .header #green {
-  top: 121px;
-  left: 213px;
+  top: 13vh;
+  left: 14vw;
+  z-index: 2;
 }
 
 .bg-image {
@@ -192,7 +189,7 @@ a:hover {
   height: 30px;
 }
 
-.top-menu .nav ul {
+.nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,18 +199,19 @@ a:hover {
   padding: 0;
 }
 
-.top-menu .nav ul li {
+.nav ul li {
   display: block;
 }
 
-.top-menu .nav ul li a {
+.nav ul li a {
   display: block;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
 }
 
-.top-menu .nav ul li a::after {
+.nav ul li a::after {
   content: '';
   display: block;
   margin: auto;
@@ -225,9 +223,19 @@ a:hover {
   transition: all ease .2s;
 }
 
-.top-menu .nav ul li a:hover::after {
+.nav ul li a:hover::after {
   -webkit-transform: translateY(2px) scale(1);
           transform: translateY(2px) scale(1);
+}
+
+.nav ul li.active a::after {
+  content: '';
+  display: block;
+  margin: auto;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  height: 1px;
+  background-color: #fff;
 }
 
 .fill {
@@ -283,14 +291,14 @@ a:hover {
   border-top: 1px solid #32C832;
   border-bottom: 1px solid #32C832;
   font-weight: 200;
-  font-size: 48px;
+  font-size: 5.34vh;
   line-height: 122%;
   text-align: center;
 }
 
 .mission .mission-text #mint3 {
-  bottom: -28px;
-  right: 236px;
+  bottom: -2vh;
+  right: 18vw;
 }
 
 .production {
@@ -300,18 +308,18 @@ a:hover {
 }
 
 .production #petro1 {
-  top: 55px;
-  left: 147px;
+  top: 6vh;
+  left: 12vw;
 }
 
 .production #tomato1 {
-  top: 85px;
-  right: -38px;
+  top: 9vh;
+  right: -3vw;
 }
 
 .production #petro2 {
-  bottom: 72px;
-  left: 32px;
+  bottom: 7vh;
+  left: 3vw;
 }
 
 .prod-razdel {
@@ -325,6 +333,7 @@ a:hover {
   display: block;
   text-align: center;
   text-decoration: none;
+  color: #fff;
 }
 
 .prod-razdel .prod-item .images {
@@ -393,13 +402,13 @@ a:hover {
 }
 
 .wherebuy #rosmarin {
-  top: -40px;
-  right: 258px;
+  top: -4vh;
+  right: 17vw;
 }
 
 .wherebuy #rosmarin2 {
-  bottom: 296px;
-  left: 267px;
+  bottom: 32vh;
+  left: 17vw;
 }
 
 .slider-market {
@@ -472,17 +481,17 @@ a:hover {
 }
 
 .opt-clients #petro3 {
-  top: -44px;
-  right: 129px;
+  top: -4vh;
+  right: 9vw;
 }
 
 .opt-clients #garlic {
-  top: 371px;
-  right: 30px;
+  bottom: 8vh;
+  right: 3vw;
 }
 
 .opt-clients #tomato2 {
-  top: 84px;
+  top: 8vh;
   left: 0;
 }
 
@@ -494,6 +503,10 @@ a:hover {
 .contact-button img {
   width: 44px;
   margin-bottom: 1vh;
+}
+
+.contact-button a {
+  color: #fff;
 }
 
 .map {
