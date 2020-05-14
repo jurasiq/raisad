@@ -9,7 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	const marketSlider = $(".owl-carousel");
+	$('.prod-slider').owlCarousel({
+		margin: 30,
+		responsive: {
+			0: {
+				items: 1,
+				loop: true,
+				nav: true
+			},
+			768: {
+				items: 1,
+				loop: true,
+				nav: true
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	const marketSlider = $("#sliderMarket");
 	marketSlider.owlCarousel({
 		loop: true,
 		margin: 10,
