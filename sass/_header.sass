@@ -43,7 +43,7 @@
 	.top-menu
 		background-color: #023044
 
-.top-menu
+.top-menu, .top-nav-mobile
 	position: fixed
 	left: 0
 	top: 0
@@ -55,6 +55,15 @@
 		display: inline-block
 		img
 			height: 30px
+.top-nav-mobile
+	display: none
+	justify-content: space-between
+	height: 60px
+	.logo
+		margin-left: 30px
+	.toggle-menu
+		margin-right: 30px
+		cursor: pointer
 
 .nav
 	ul
@@ -94,6 +103,51 @@
 .fill
 	background-color: #023044
 	transition: all .5s
+
+.mobile-menu
+	position: fixed
+	flex-direction: column
+	justify-content: space-between
+	text-align: center
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: #023044
+	z-index: 99
+	padding: 15px 30px
+	display: none
+	&_active
+		display: flex
+	.mhead
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		.logo
+			img
+				display: inline-block
+				height: 30px
+		.close-menu
+			cursor: pointer
+	.mobile-nav
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			li
+				margin: 2.5vh 0
+				a
+					color: #fff
+					text-transform: uppercase
+					font-size: 5vh
+					margin: 0
+					padding: 0
+	.phone
+		padding: 0 0 40px
+		margin: 0
+
 
 .contact-block
 	position: absolute

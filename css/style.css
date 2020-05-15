@@ -170,7 +170,7 @@ body {
   background-color: #023044;
 }
 
-.top-menu {
+.top-menu, .top-nav-mobile {
   position: fixed;
   left: 0;
   top: 0;
@@ -180,12 +180,29 @@ body {
   z-index: 99;
 }
 
-.top-menu .logo {
+.top-menu .logo, .top-nav-mobile .logo {
   display: inline-block;
 }
 
-.top-menu .logo img {
+.top-menu .logo img, .top-nav-mobile .logo img {
   height: 30px;
+}
+
+.top-nav-mobile {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+}
+
+.top-nav-mobile .logo {
+  margin-left: 30px;
+}
+
+.top-nav-mobile .toggle-menu {
+  margin-right: 30px;
+  cursor: pointer;
 }
 
 .nav ul {
@@ -241,6 +258,78 @@ body {
   background-color: #023044;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+
+.mobile-menu {
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #023044;
+  z-index: 99;
+  padding: 15px 30px;
+  display: none;
+}
+
+.mobile-menu_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-menu .mhead {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.mobile-menu .mhead .logo img {
+  display: inline-block;
+  height: 30px;
+}
+
+.mobile-menu .mhead .close-menu {
+  cursor: pointer;
+}
+
+.mobile-menu .mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu .mobile-nav ul li {
+  margin: 2.5vh 0;
+}
+
+.mobile-menu .mobile-nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 5vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu .phone {
+  padding: 0 0 40px;
+  margin: 0;
 }
 
 .contact-block {
@@ -330,8 +419,8 @@ body {
   position: relative;
   width: 100%;
   margin-top: 0;
-  -webkit-transform: translateY(-180px);
-          transform: translateY(-180px);
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
 .product-slider_wrap .prod-slider .owl-nav .owl-prev {
@@ -592,6 +681,12 @@ body {
 .footer .madebuy {
   display: inline-block;
   float: right;
+}
+
+.footer-mobile {
+  background: #023044;
+  padding: 3vh 0;
+  text-align: center;
 }
 
 .catalog {
@@ -903,6 +998,116 @@ body {
   }
   .opt-clients #tomato2 {
     top: 36vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-menu {
+    display: none;
+  }
+  .top-nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .h1 {
+    font-size: 6.5vh;
+    margin-top: 25vh;
+  }
+  .header #borsch {
+    max-width: 214px;
+    top: -12vh;
+    right: -22vw;
+  }
+  .header #plow {
+    display: none;
+  }
+  .header #petro {
+    max-width: 40px;
+    top: -3vh;
+    left: 40vw;
+  }
+  .header #green {
+    display: none;
+  }
+  .header #tomato {
+    max-width: 80px;
+    bottom: 25vh;
+    left: -5vw;
+  }
+  .header #mint1 {
+    max-width: 55px;
+    top: 32vh;
+    right: 4vw;
+  }
+  .header #mint2 {
+    max-width: 35px;
+    top: 18vh;
+    right: 67vw;
+  }
+  .header #rizotto {
+    max-width: 214px;
+    bottom: 6vh;
+    right: -35vw;
+  }
+  .header .contact-block {
+    z-index: 1;
+    bottom: 40px;
+  }
+  .about #dal {
+    max-width: 214px;
+    bottom: -15vh;
+    left: -28vw;
+  }
+  .production #petro1 {
+    max-width: 36px;
+  }
+  .production #tomato1 {
+    max-width: 124px;
+    right: -14vw;
+  }
+  .production #petro2 {
+    max-width: 66px;
+  }
+  .mission .mission-text {
+    font-size: 3.73vh;
+  }
+  .mission .mission-text #mint3 {
+    max-width: 45px;
+    bottom: -3vh;
+  }
+  .wherebuy #rosmarin {
+    max-width: 79px;
+    top: -5vh;
+    right: 5vw;
+  }
+  .wherebuy #rosmarin2 {
+    display: none;
+  }
+  .wherebuy .slider-market_wrap {
+    width: 220px;
+  }
+  .wherebuy .e-market img {
+    width: 220px;
+    margin: auto;
+  }
+  .opt-clients #petro3 {
+    max-width: 61px;
+  }
+  .opt-clients #tomato2 {
+    max-width: 133px;
+    top: 83vh;
+    left: -12vw;
+  }
+  .opt-clients #garlic {
+    max-width: 49px;
+    bottom: 45vh;
+  }
+  .footer {
+    display: none;
+  }
+  .modal-overlay .modal {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

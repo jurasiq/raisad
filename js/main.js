@@ -3,10 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	$(document).scroll(function () {
 		scroll_pos = $(this).scrollTop();
 		if (scroll_pos > 0) {
-			$('.top-menu').addClass('fill');
+			$('.top-menu, .top-nav-mobile').addClass('fill');
 		} else {
-			$('.top-menu').removeClass('fill');
+			$('.top-menu, .top-nav-mobile').removeClass('fill');
 		}
+	});
+
+	$('.toggle-menu').on('click', function () {
+		$('.mobile-menu').addClass('mobile-menu_active');
+	});
+
+	$('.close-menu').on('click', function () {
+		$('.mobile-menu').removeClass('mobile-menu_active');
 	});
 
 	$('.prod-slider').owlCarousel({
@@ -31,8 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	const marketSlider = $("#sliderMarket");
 	marketSlider.owlCarousel({
 		loop: true,
-		margin: 10,
+		margin: 30,
 		nav: false,
+		dots: false,
 		autoplay: true,
 		responsive: {
 			0: {
