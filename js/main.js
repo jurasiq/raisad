@@ -1,3 +1,7 @@
+window.onload = function () {
+	$('.preloader').delay(1000).fadeOut('slow');
+};
+
 document.addEventListener("DOMContentLoaded", function () {
 
 	$(document).scroll(function () {

@@ -22,6 +22,19 @@
 </head>
 
 <body>
+	<div class="preloader" id="preloader">
+		<div class="lds-roller">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		<div class="header">
 			<img class="bg-image" id="borsch" src="img/borsch.png" alt="Борщ">
@@ -31,6 +44,7 @@
 			<img class="bg-image" id="rizotto" src="img/rizotto.png" alt="Ризотто">
 			<img class="bg-image" id="mint1" src="img/mint1.png" alt="Мята">
 			<img class="bg-image" id="mint2" src="img/mint2.png" alt="Мята">
+
 			<div class="top-menu">
 				<div class="container-fluid">
 					<div class="row justify-content-center align-items-center">
@@ -85,21 +99,20 @@
 			</div>
 			<div class="contact-block">
 				<img src="img/100procent.png" alt="100% натуральный продукт" class="label">
-				<div class="phone text-center">8 (800) 505-00-37 <br>Телефон горячей линии</div>
+				<div class="phone text-center">8 (800) 505-00-37 <br>Телефон <br>горячей линии</div>
 			</div>
 			<img class="bg-image" id="green" src="img/green.png" alt="Зелень">
 		</div>
 
 		<section class="st about">
-			<img class="bg-image" id="dal" src="img/dal.png" alt="Дал">
 			<div class="proizvodtvo">
 				<h2 class="h2-b">Производство</h2>
 			</div>
 			<div class="vegetable"></div>
 			<div class="container-fluid">
 				<div class="row justify-content-center align-items-center">
-					<div class="col-md-4 col-lg-3">
-						<img class="sklad img-response" src="img/sklad-img.png" alt="Склад">
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+						<div class="sklad"><img src="img/sklad-img.png" alt="Склад"></div>
 					</div>
 					<div class="col-md-7 col-lg-6">
 						<p class="b-text">Компания была создана в 2013 году. С тех пор мы изготовили более 10000000 упаковок
@@ -114,8 +127,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="about-text">
-			</div>
+
+			<img class="bg-image" id="dal" src="img/dal.png" alt="Дал">
+			<img class="bg-image" id="mint4" src="img/mint4.png" alt="Мята">
 		</section>
 
 		<section class="st mission">
@@ -239,19 +253,19 @@
 				<div class="row justify-content-center">
 					<div class="col-lg-2 col-md-3">
 						<div class="e-market">
-							<img src="img/marketlogos/e-ozon.svg" alt="Ozon" class="img-response">
+							<img src="img/marketlogos/e-ozon.svg" alt="Ozon">
 							<a href="#" class="e-marketlink">ozon.ru</a>
 						</div>
 					</div>
 					<div class="col-lg-2 col-md-3">
 						<div class="e-market">
-							<img src="img/marketlogos/e-wildberries.svg" alt="Wildberries" class="img-response">
+							<img src="img/marketlogos/e-wildberries.svg" alt="Wildberries">
 							<a href="#" class="e-marketlink">wildberries.ru</a>
 						</div>
 					</div>
 					<div class="col-lg-2 col-md-3">
 						<div class="e-market">
-							<img src="img/marketlogos/e-beru.svg" alt="Беру!" class="img-response">
+							<img src="img/marketlogos/e-beru.svg" alt="Беру!">
 							<a href="#" class="e-marketlink">beru.ru</a>
 						</div>
 					</div>
@@ -270,7 +284,7 @@
 			<h2 class="h2-b">Оптовым клиентам</h2>
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-lg-6 col-md-10">
+					<div class="col-lg-8 col-md-10">
 						<p class="b-text">Мы разрабатываем вкусные предложения для правильного, здорового питания. Используем
 							натуральные ингредиенты и всегда заботимся о их качестве. Наша компания всегда открыта к сотрудничеству с
 							новыми партнерами.</p>
@@ -279,21 +293,21 @@
 				</div>
 				<div class="row justify-content-center">
 
-					<div class="col-lg-2 col-md-8">
+					<div class="col-lg-3 col-md-8">
 						<div class="contact-button">
 							<img src="img/icon-phone.svg" alt="Заказать звонок">
 							<a href="#" class="btn base-btn" data-path="callback-form">заказать звонок</a>
 						</div>
 					</div>
 
-					<div class="col-lg-2 col-md-8">
+					<div class="col-lg-3 col-md-8">
 						<div class="contact-button">
 							<img src="img/icon-price.svg" alt="Заказать прайс">
 							<a href="#" class="btn base-btn" data-path="price-form">заказать прайс</a>
 						</div>
 					</div>
 
-					<div class="col-lg-2 col-md-8">
+					<div class="col-lg-3 col-md-8">
 						<div class="contact-button">
 							<img src="img/icon-write.svg" alt="Написать нам">
 							<a href="#" class="btn base-btn" data-path="write-form">написать нам</a>
@@ -338,7 +352,7 @@
 			</div>
 		</footer>
 
-		<footer class="footer-mobile">
+		<footer class="footer-mobile d-md-none">
 			<p class="phone">8 (800) 505-00-37 <br>звонок беспалатный</p>
 			<a href="http://kalachi-brand.ru/"><img src="img/kalachi-brand.svg" alt="kalachi-brand" class="madebuy"></a>
 		</footer>

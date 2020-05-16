@@ -40,8 +40,12 @@
 	.about
 		#dal
 			max-width: 320px
-			bottom: -10vh
-			left: -7vw
+			top: -21vh
+			left: -10vw
+		#mint4
+			max-width: 70px
+			bottom: 2vh
+			left: 4vw
 	.mission
 		padding: 12vh 0
 		.mission-text
@@ -63,17 +67,25 @@
 	.opt-clients
 		#tomato2
 			top: 36vh
+	.receptes
+		.recept-item
+			border-bottom: 1px solid #000
+		.r-wrap
+			&:nth-child(2n+2)
+				border-left: none
+				border-right: none
+
 
 @media ( max-width:	576px)
 	.top-menu
 		display: none
-	.top-nav-mobile
+	.top-nav-mobile, .top-nav-mobile-sec
 		display: flex
 			
 	.header
 		.h1
 			font-size: 6.5vh
-			margin-top: 25vh
+			margin-top: 20vh
 		#borsch
 			max-width: 214px
 			top: -12vh
@@ -92,11 +104,11 @@
 			left: -5vw
 		#mint1
 			max-width: 55px
-			top: 32vh
+			top: 42vh
 			right: 4vw
 		#mint2
 			max-width: 35px
-			top: 18vh
+			top: 12vh
 			right: 67vw
 		#rizotto
 			max-width: 214px
@@ -108,9 +120,14 @@
 
 	.about
 		#dal
-			max-width: 214px
-			bottom: -15vh
-			left: -28vw
+			max-width: 210px
+			left: -30vw
+		#mint4
+			max-width: 50px
+			bottom: -5vh
+			left: 75vw
+		.sklad
+			margin-bottom: 5vh
 	.production
 		#petro1
 			max-width: 36px
@@ -149,6 +166,22 @@
 		#garlic
 			max-width: 49px
 			bottom: 45vh
+	
+	.b-text
+		padding-left: 3vw
+
+	.prod-parametres
+		.icon-parameter
+			img
+				max-width: 200px
+
+	.receptes
+		.recept-item
+			border-bottom: 1px solid #000
+		.r-wrap
+			&:nth-child(2n+2)
+				border-left: none
+				border-right: none
 
 	.footer
 		display: none

@@ -7,7 +7,7 @@
 	<title>Компания Raisad</title>
 
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,800&display=swap&subset=cyrillic-ext"
 		rel="stylesheet">
@@ -22,14 +22,13 @@
 			<div class="top-menu">
 				<div class="container-fluid">
 					<div class="row justify-content-center align-items-center">
-						<div class="col-2">
+						<div class="col-xs-auto col-md-3">
 							<a href="#" class="logo"><img src="img/logo-raisad.png" alt="Raisad" /></a>
 						</div>
-						<div class="col-4"></div>
-						<div class="col-3">
+						<div class="col-lg-3 offset-lg-3 col-md-4 offset-md-3 col-xs-auto offset-xs-0">
 							<nav class="nav">
 								<ul>
-									<li><a href="#">Гарниры</a></li>
+									<li class="active"><a href="#">Гарниры</a></li>
 									<li><a href="#">Супы</a></li>
 									<li><a href="#">Котлеты</a></li>
 								</ul>
@@ -39,7 +38,7 @@
 				</div>
 			</div>
 
-			<div class="top-nav-mobile">
+			<div class="top-nav-mobile-sec">
 				<a href="#" class="logo"><img src="img/logo-raisad.png" alt="Raisad" /></a>
 				<div class="toggle-menu">
 					<svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +71,7 @@
 			<div class="container">
 				<div class="row justify-content-center">
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/rice-veg.png" alt="Рис с овощами" class="prod-item_image img-response">
 							<h3 class="h3">Рис с овощами <br>«Постная паэлья»</h3>
@@ -87,7 +86,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/plov-veg.png" alt="Овощной плов" class="prod-item_image img-response">
 							<h3 class="h3">Овощной плов <br>«Рис с грибами»</h3>
@@ -102,7 +101,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/rice-kapust.png" alt="Ленивые голубцы" class="prod-item_image img-response">
 							<h3 class="h3">Ленивые голубцы <br>«Рис с капустой»</h3>
@@ -117,7 +116,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/grecha-veg.png" alt="Греча с овощами" class="prod-item_image img-response">
 							<h3 class="h3">Греча с овощами <br>«По-домашнему»</h3>
@@ -131,7 +130,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/grecha-bakl.png" alt="Греча с баклажанами" class="prod-item_image img-response">
 							<h3 class="h3">Греча с баклажанами <br>«По-купечески»</h3>
@@ -145,7 +144,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/chechev-veg.png" alt="Чечевица с овощами" class="prod-item_image img-response">
 							<h3 class="h3">Чечевица с овощами <br>от Шеф-повора</h3>
@@ -159,7 +158,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-4 col-sm-10">
+					<div class="col-lg-3 col-md-4 col-sm-8">
 						<div class="prod-item">
 							<img src="img/prod-images/bulgur-veg.png" alt="Рис с овощами" class="prod-item_image img-response">
 							<h3 class="h3">Булгур с овощами <br>«от Шеф-повора»</h3>
@@ -178,24 +177,24 @@
 		</section>
 
 		<section class="st prod-parametres">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row justify-content-center">
 
-					<div class="col-lg-3 col-md-10">
+					<div class="col-md-3 col-sm-10">
 						<div class="icon-parameter">
 							<img src="img/icon-vitamin.svg" alt="Витамины" class="img-response">
 							<h3 class="h3">Богаты витаминами <br>и минералами</h3>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-10">
+					<div class="col-md-3 col-sm-10">
 						<div class="icon-parameter">
 							<img src="img/icon-bestseeds.svg" alt="Лучшие сорта" class="img-response">
 							<h3 class="h3">Лучшие сорта риса <br>и гречки</h3>
 						</div>
 					</div>
 
-					<div class="col-lg-3 col-md-10">
+					<div class="col-md-3 col-sm-10">
 						<div class="icon-parameter">
 							<img src="img/icon-12monts.svg" alt="Срок годности" class="img-response">
 							<h3 class="h3">Срок годности <br>12 месяцев</h3>
@@ -211,7 +210,7 @@
 				<h2 class="h2-b">Рецепт приготовления</h2>
 				<div class="row justify-content-center">
 
-					<div class="col-4 r-wrap">
+					<div class="col-lg-3 col-md-10 col-sm-10 r-wrap">
 						<div class="recept-item">
 							<img src="img/icon-pan.svg" alt="Сковорода" class="recept-icon">
 							<h3 class="h3">1. Сковорода</h3>
@@ -223,7 +222,7 @@
 						</div>
 					</div>
 
-					<div class="col-4 r-wrap">
+					<div class="col-lg-3 col-md-10 col-sm-10 r-wrap">
 						<div class="recept-item">
 							<img src="img/icon-multicooker.svg" alt="Мультиварка" class="recept-icon">
 							<h3 class="h3">2. Мультиварка</h3>
@@ -234,7 +233,7 @@
 						</div>
 					</div>
 
-					<div class="col-4 r-wrap">
+					<div class="col-lg-3 col-md-10 col-sm-10 r-wrap">
 						<div class="recept-item">
 							<img src="img/icon-pot.svg" alt="Кастрюля" class="recept-icon">
 							<h3 class="h3">3. Кастрюля</h3>
@@ -275,17 +274,18 @@
 					<div class="col-3">
 						<p class="gost">Система менеджмента качества <br>ГОСТ Р ИСО 9001-2015 <br>(ISO 9001:2015)</p>
 					</div>
-					<div class="col-2">
+					<div class="col-2 d-sm-none d-lg-block">
 						<p class="phone">8 (800) 505-00-37 <br>звонок беспалатный</p>
 					</div>
-					<div class="col-2">
+					<div class="col-lg-2 col-md-4">
+						<p class="phone d-md-block d-lg-none">8 (800) 505-00-37 <br>звонок беспалатный</p>
 						<a href="http://kalachi-brand.ru/"><img src="img/kalachi-brand.svg" alt="kalachi-brand" class="madebuy"></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 
-		<footer class="footer-mobile">
+		<footer class="footer-mobile d-lg-none d-md-none">
 			<p class="phone">8 (800) 505-00-37 <br>звонок беспалатный</p>
 			<a href="http://kalachi-brand.ru/"><img src="img/kalachi-brand.svg" alt="kalachi-brand" class="madebuy"></a>
 		</footer>
